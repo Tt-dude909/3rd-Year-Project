@@ -6,7 +6,7 @@
        <extension id="example.menu"
                point="org.protege.editor.core.application.EditorKitMenuAction">
         <name value="Example..."/>
-        <class value="template.TemplateMenu"/>
+        <class value="template.TemplateMenu"/><!--   java file      -->
         <toolTip value="A menu plugin to bootstrap the new plugin process"/>
         <path value="org.protege.editor.owl.menu.tools/SlotZ-Z"/>
         <editorKitId value="OWLEditorKit"/>

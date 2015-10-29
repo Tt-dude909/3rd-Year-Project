@@ -12,7 +12,8 @@ import org.protege.editor.owl.ui.action.ProtegeOWLAction;
 import org.semanticweb.owlapi.model.OWLEntity;
 
 /**
- * This plugin doesn't really do much and is intended to be deleted when a developer creates his own content.
+ * This plugin doesn't really do much and is intended to be deleted when a
+ * developer creates his own content.
  * 
  * @author redmond
  *
