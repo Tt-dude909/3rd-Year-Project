@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.6
+Created-By: 1.8.0_65-b17 (Oracle Corporation)
+Bundle-ManifestVersion: 2
+Bundle-Name: Semantic Similarity
+Bundle-SymbolicName: org.coode.semanticsimilarity;singleton:=true
+Bundle-Category: protege
+Bundle-Description: A Plugin allowing the user to gien two OWL classes
+  see how semanticy simialr they are.
+Bundle-ClassPath: .
+Import-Package: org.osgi.framework,org.apache.log4j,javax.swing,javax.
+ swing.border,javax.swing.colorchooser,javax.swing.event,javax.swing.f
+ ilechooser,javax.swing.plaf,javax.swing.plaf.basic,javax.swing.plaf.m
+ etal,javax.swing.plaf.multi,javax.swing.plaf.synth,javax.swing.table,
+ javax.swing.text,javax.swing.text.html,javax.swing.text.html.parser,j
+ avax.swing.text.rtf,javax.swing.tree,javax.swing.undo,org.w3c.dom,org
+ .w3c.dom.bootstrap,org.w3c.dom.events,org.w3c.dom.ls,org.xml.sax,org.
+ xml.sax.ext,org.xml.sax.helpers,javax.xml.parsers
+Bundle-Version: 1.0.0.2015_12_03_0154
+Bundle-Activator: org.protege.editor.core.plugin.DefaultPluginActivato
+ r 
+Require-Bundle: org.eclipse.equinox.registry,org.eclipse.equinox.commo
+ n,org.protege.editor.core.application,org.protege.editor.owl,org.sema
+ nticweb.owl.owlapi
+Built-By: Matty
+
