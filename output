@@ -1,0 +1,54 @@
+Buildfile: C:\Users\Matty\3rd-Year-Project\build.xml
+
+init:
+
+checkProtegeLibs:
+     [echo] **********************************************************
+     [echo] Using Protege Home = C:\Users\Matty\Protege_5.0_beta
+     [echo] Using Java Version = 1.8
+     [echo] **********************************************************
+
+checkProtegeLibsAndReport:
+
+buildlibs:
+    [unjar] Expanding: C:\Users\Matty\Protege_5.0_beta\bundles\org.protege.common.jar into C:\Users\Matty\3rd-Year-Project\build
+
+compile:
+    [javac] Compiling 4 source files to C:\Users\Matty\3rd-Year-Project\build\classes
+    [javac] C:\Users\Matty\3rd-Year-Project\src\main\java\template\TemplateMenu.java:9: error: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] C:\Users\Matty\3rd-Year-Project\src\main\java\template\TemplateMenu.java:23: error: cannot find symbol
+    [javac] 	private Logger logger = Logger.getLogger(TemplateMenu.class);
+    [javac] 	        ^
+    [javac]   symbol:   class Logger
+    [javac]   location: class TemplateMenu
+    [javac] C:\Users\Matty\3rd-Year-Project\src\main\java\template\TemplateView.java:7: error: package org.apache.log4j does not exist
+    [javac] import org.apache.log4j.Logger;
+    [javac]                        ^
+    [javac] C:\Users\Matty\3rd-Year-Project\src\main\java\template\TemplateView.java:24: error: cannot find symbol
+    [javac] 	private Logger logger = Logger.getLogger(TemplateView.class);
+    [javac] 	        ^
+    [javac]   symbol:   class Logger
+    [javac]   location: class TemplateView
+    [javac] C:\Users\Matty\3rd-Year-Project\src\org\protege\editor\owl\examples\tab\ExampleViewComponent.java:16: error: cannot find symbol
+    [javac]     private static final Logger log = Logger.getLogger(ExampleViewComponent.class);
+    [javac]                          ^
+    [javac]   symbol:   class Logger
+    [javac]   location: class ExampleViewComponent
+    [javac] C:\Users\Matty\3rd-Year-Project\src\main\java\template\TemplateMenu.java:23: error: cannot find symbol
+    [javac] 	private Logger logger = Logger.getLogger(TemplateMenu.class);
+    [javac] 	                        ^
+    [javac]   symbol:   variable Logger
+    [javac]   location: class TemplateMenu
+    [javac] C:\Users\Matty\3rd-Year-Project\src\main\java\template\TemplateView.java:24: error: cannot find symbol
+    [javac] 	private Logger logger = Logger.getLogger(TemplateView.class);
+    [javac] 	                        ^
+    [javac]   symbol:   variable Logger
+    [javac]   location: class TemplateView
+    [javac] C:\Users\Matty\3rd-Year-Project\src\org\protege\editor\owl\examples\tab\ExampleViewComponent.java:16: error: cannot find symbol
+    [javac]     private static final Logger log = Logger.getLogger(ExampleViewComponent.class);
+    [javac]                                       ^
+    [javac]   symbol:   variable Logger
+    [javac]   location: class ExampleViewComponent
+    [javac] 8 errors

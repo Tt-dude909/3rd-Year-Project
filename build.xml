@@ -42,7 +42,7 @@
    <property name = "protege.common"    location="${protege.home}/bundles"/>
    <property name = "protege.plugins"   location="${protege.home}/plugins"/>
    <property name = "run.config"        location="${protege.home}/config.xml"/>
-   <!-- <property name = "protege.osgi"        location="${protege.home}/run"/> -->
+   <property name = "protege.osgi"        location="${protege.home}/run"/> 
 
    <property name="equinox.common" 
              location="${protege.common}/org.eclipse.equinox.common.jar"/>
@@ -59,7 +59,10 @@
    <property name="owl.editor.jar"
 	     location="${protege.plugins}/org.protege.editor.owl.jar"/>
 
+  
 
+  
+  
    <target name = "init">
      <tstamp>
        <format property="build.time" pattern="yyyy_MM_dd_hhmm"/>
@@ -107,7 +110,9 @@
      <echo message="Using Protege Home = ${protege.home}"/>
      <echo message="Using Java Version = ${ant.java.version}" />
      <echo message="**********************************************************"/>
-     <condition property="libs.found">
+     <property name="owl.editor.jar"
+	           location="${plugins}/org.protege.editor.owl.jar"/>
+	 <condition property="libs.found">
        <and>
          <available file="${protege.osgi}" type="file"/>
 	     <available file="${equinox.common}" type = "file"/>
@@ -127,8 +132,8 @@
             **** CHANGE ME ****
 
             Remove this line if you don't have a lib directory.
-            
-       <fileset dir="${lib}"/> -->
+             -->
+       <fileset dir="${lib}"/>
        <fileset dir="${genlib}"/>
      </path>
    </target>
@@ -164,6 +169,7 @@
         viewconfig and the plugin.xml.  This will be sufficient in
         many cases.
      -->
+
    <target name="copy.resources">
      <copy todir="${classes}">
        <fileset dir="${src}">
@@ -177,10 +183,10 @@
           **** CHANGE ME ****
 
           Remove the copy operation below if you don't have a lib directory.
-       
+       -->
      <copy todir="${classes}/lib">
        <fileset dir="${lib}" excludes="junit*.jar"/>
-     </copy> -->
+     </copy> 
      <copy todir="${classes}">
        <fileset dir="." includes="*.xml">
            <exclude name="build.xml"/>
@@ -193,7 +199,8 @@
             destdir = "${classes}" 
             debug="on"
             includeAntRuntime="false">
-       <classpath refid = "project.classpath"/>  
+       <classpath refid = "project.classpath"/> 
+		<compilerarg value="-Xlint"/>
      </javac>
    </target>
 

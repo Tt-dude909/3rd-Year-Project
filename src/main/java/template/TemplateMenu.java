@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.protege.editor.owl.model.OWLWorkspace;
 import org.protege.editor.owl.ui.action.ProtegeOWLAction;
 import org.semanticweb.owlapi.model.OWLEntity;
@@ -20,7 +20,7 @@ import org.semanticweb.owlapi.model.OWLEntity;
  */
 public class TemplateMenu extends ProtegeOWLAction {
 	private static final long serialVersionUID = 749843192372192393L;
-	private Logger logger = Logger.getLogger(TemplateMenu.class);
+	//private Logger logger = Logger.getLogger(TemplateMenu.class);
 
 	@Override
 	public void initialise() throws Exception {		
@@ -32,7 +32,7 @@ public class TemplateMenu extends ProtegeOWLAction {
 
 	@Override
 	public void actionPerformed(ActionEvent event) {
-		logger.info("Template menu plugin invoked");
+		//logger.info("Template menu plugin invoked");
 		OWLWorkspace workspace = getOWLWorkspace();
 		OWLEntity selectedEntity = workspace.getOWLSelectionModel().getSelectedEntity();
 		String message;
